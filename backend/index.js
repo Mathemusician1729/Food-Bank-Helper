@@ -18,6 +18,16 @@ const db = mysql.createConnection({
     database:"cellarconstitution"
 })
 
+// read data
+app.get("/asdf", (req, res)=>{
+    const q = "SELECT * FROM contact;"
+    db.query(q, (err,data)=> {
+        if (err) return res.json(err)
+        return res.json(data)
+    })
+})
+
 app.listen(8080, ()=>{
     console.log("Connected to backend")
 })
+
