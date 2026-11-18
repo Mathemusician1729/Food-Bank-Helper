@@ -8,7 +8,7 @@ import { // import routes for requesting/getting data
 } from 'react-router-dom'
 
 // import pages for frontend pages (make sure name is different than the route names)
-import Fetch from "./pages/fetch";
+import Fetch from "./pages/contacts";
 import Add from "./pages/add";
 import Update from "./pages/update";
 
